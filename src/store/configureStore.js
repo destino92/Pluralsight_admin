@@ -6,6 +6,7 @@ export default function configureStore(initialState){
   return createStore(
     rootReducer,
     initialState,
+    // Read more about this
     applyMiddleware(reduxImmutableStateInvariant())
   );
 }
